@@ -1,0 +1,17 @@
+<html>
+<style>
+#time {font-size:500%;color: pink ;font-family: "consolas"}
+</style>
+ eat launch :<span id ="time">__:__:__ </span>
+ <script >
+   setInterval(function(){
+   	var timenow=new Date().toString();
+   	timenow=timenow.substr(16,8);
+   	document.getElementById("time").innerHTML=timenow;
+
+   },1000); 
+
+
+ </script>
+
+ </html>

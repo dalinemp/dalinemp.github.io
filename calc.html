@@ -1,0 +1,44 @@
+<html>
+<input id="o1" value="3"></input>
+<input id="o2" value="4"></input>
+<button onClick="multiply()">*</button> 
+<button onClick="add()">+</button> 
+<button onClick="RU03()">-</button> 
+<button onClick="TJ6()">/</button> 
+<br>
+*=<span id="result">0</span>
+<br>
++=<span id="rasult">0</span>
+<br>
+-=<span id="rIsult">0</span>
+<br>
+/=<span id="rUsult">0</span>
+<script>
+ var multiply=function  () {
+ 	var o1=document.getElementById("o1").value;
+ 	var o2=document.getElementById("o2").value;
+ 	document.getElementById("result").innerHTML=o1*o2;
+ 
+
+ }
+ var add=function  () {
+ 	var o1=parseInt(document.getElementById("o1").value);
+ 	var o2=parseInt(document.getElementById("o2").value);
+ 	document.getElementById("rasult").innerHTML= o1 + o2 ;
+
+ }
+  var RU03=function  () {
+ 	var o1=parseInt(document.getElementById("o1").value);
+ 	var o2=parseInt(document.getElementById("o2").value);
+ 	document.getElementById("rIsult").innerHTML= o1 - o2 ;
+
+ }
+  var TJ6=function  () {
+ 	var o1=parseInt(document.getElementById("o1").value);
+ 	var o2=parseInt(document.getElementById("o2").value);
+ 	document.getElementById("rUsult").innerHTML= o1 / o2 ;
+
+ }
+ </script>
+
+</html>
